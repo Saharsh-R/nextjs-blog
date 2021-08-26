@@ -21,13 +21,23 @@ export default function Home({ allPostsData }) {
 				<title>{siteTitle}</title>
 			</Head>
 			<section className={utilStyles.headingLg}>
-				<p>Hi! I am Saharsh. This blog is made using Next.js</p>
+				<p>Hi! I am Saharsh. This blog is made using Next.js. </p>
+				<p>There are both types of blogs.</p>
+				<ul>
+					<li>Server side rendered</li>
+
+					<li>Prerendered</li>
+				</ul>
 			</section>
 
-	
+			<h1> Check out 👉  {' '}
+				<Link href={`/ssr`}>
+					<a>SSR Blogs</a>
+				</Link>
+			</h1>
 
 			<section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-				<h2 className={utilStyles.headingLg}>Blog</h2>
+				<h2 className={utilStyles.headingLg}>Prerendered Blogs</h2>
 				<ul className={utilStyles.list}>
 					{allPostsData.map(({ id, date, title }) => (
 						<li className={utilStyles.listItem} key={id}>
