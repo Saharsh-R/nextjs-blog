@@ -1,1 +1,3 @@
 - [Next js with markdown blog](https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
+- [Get the absolute url](https://www.npmjs.com/package/next-absolute-url)
+- 
